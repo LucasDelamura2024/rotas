@@ -1,0 +1,203 @@
+/* Garante que o body ocupe toda a altura da tela */
+html, body {
+    height: 100%; /* Garante que o corpo ocupe toda a altura */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+}
+
+/* O main ocupa o espaço disponível */
+main {
+    flex: 1; /* Faz com que o main ocupe o espaço restante */
+    padding: 20px;
+}
+
+/* Garantir que o footer fique sempre no final */
+footer {
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    background-color: #FF5722; /* Cor Laranja */
+    color: white;
+    margin-top: auto; /* Empurra o footer para o final da página */
+}
+
+footer p {
+    margin: 0; /* Remove o espaço extra em torno do texto */
+}
+
+header, footer {
+    background-color: #FF5722; /* Cor Laranja da Shopee */
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1, footer p, nav a {
+    color: #fff;
+    margin: 0;
+}
+
+nav a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%; /* A tabela ocupa toda a largura disponível */
+    margin-top: 20px;
+    border-collapse: collapse; /* Para evitar bordas duplas */
+    table-layout: fixed; /* As colunas terão tamanhos fixos */
+}
+
+table th, table td {
+    padding: 0 10px; /* Espaçamento interno para a leitura sem aumentar muito o height */
+    border: 1px solid #ddd; /* Borda leve entre as células */
+    text-align: center; /* Alinhamento centralizado de texto */
+    height: 15px; /* Tamanho fixo da altura das linhas */
+    word-wrap: break-word; /* Quebra de palavras longas para caber na célula */
+    overflow: hidden; /* Garante que o texto longo não ultrapasse o tamanho da célula */
+    text-overflow: ellipsis; /* Adiciona '...' quando o texto é longo */
+    position: relative; /* Para o efeito de hover */
+}
+
+/* Definindo a largura fixa para a coluna 'Bairro' */
+table th:nth-child(6), table td:nth-child(6) {
+    width: 60px; /* Largura de 60px para a coluna 'Bairro' */
+}
+
+table th {
+    background-color: #FF5722; /* Cor de fundo para os cabeçalhos */
+    color: white;
+    font-weight: bold;
+}
+
+table td {
+    background-color: #fafafa; /* Cor de fundo mais suave para as células */
+}
+
+table tr:nth-child(even) td {
+    background-color: #f2f2f2; /* Cor alternativa para as linhas pares */
+}
+
+table tr:hover td {
+    background-color: #ffccbc; /* Cor de destaque ao passar o mouse */
+}
+
+table td:hover {
+    overflow: visible; /* Permite que o texto transborde ao passar o mouse */
+    background-color: #ffe0b2; /* Cor de fundo para quando o texto for mostrado ao passar o mouse */
+    white-space: normal; /* Garante que o texto quebrará em várias linhas */
+}
+
+/* Adicionar estilos para o tipo de atribuição */
+td.tipo-rota-aleatoria {
+    color: red;
+    font-weight: bold;
+}
+
+td.tipo-rota-preferida {
+    color: blue;
+    font-weight: bold;
+}
+
+td.tipo-sem-rota {
+    color: gray;
+    font-weight: bold;
+}
+
+#resumo-container {
+    background-color: #f9f9f9; /* Fundo suave */
+    border: 1px solid #ddd; /* Borda leve */
+    border-radius: 8px; /* Cantos arredondados */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombras suaves */
+    font-family: Arial, sans-serif;
+}
+
+#resumo-container h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center; /* Título centralizado */
+}
+
+#resumo-container p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    padding: 8px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#resumo-container p strong {
+    font-weight: bold;
+}
+
+.rota-aleatoria {
+    background-color: #ffebee; /* Cor suave de fundo para aleatória */
+    color: #d32f2f; /* Vermelho escuro */
+}
+
+.rota-preferida {
+    background-color: #e8f5e9; /* Cor suave de fundo para preferida */
+    color: #388e3c; /* Verde escuro */
+}
+
+.sem-rota {
+    background-color: #f3e5f5; /* Cor suave de fundo para sem rota */
+    color: #9c27b0; /* Roxo escuro */
+}
+
+#resumo-container p span {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+#resumo-container {
+    display: none; /* Esconde o resumo por padrão */
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+#relatorio-container {
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    display: none; /* Esconde inicialmente */
+}
+
+#relatorio-container h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+#relatorio-container p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+#export-btn {
+    display: block; /* Torna o botão um bloco */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+    margin-bottom: 20px; /* Distância de 15px do footer */
+}

@@ -1,0 +1,84 @@
+/* Estilo Geral */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #d9534f, #c9302c);
+    color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+header nav a {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #f8d7da;
+}
+
+/* Tabela */
+.table-responsive {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #f8d7da;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+td {
+    color: #555;
+    font-size: 14px;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: rgba(217, 83, 79, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #d9534f, #c9302c);
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}

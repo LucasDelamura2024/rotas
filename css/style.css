@@ -1,0 +1,197 @@
+/* Corpo geral */
+body {
+    font-family: 'Poppins', Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Resumo Container */
+#resumo-container {
+    background: linear-gradient(135deg, #ffffff, #f8f9fa);
+    border-radius: 12px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin: 20px 0;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#resumo-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Título do Resumo */
+#resumo-container h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #d9534f;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #d9534f;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Estilo para as linhas do resumo */
+#resumo-container p {
+    font-size: 1.2rem;
+    margin: 15px 0;
+    color: #4a4a4a;
+    line-height: 1.5;
+}
+
+/* Destaque para os títulos */
+#resumo-container p strong {
+    color: #555555;
+    font-weight: bold;
+}
+
+/* Destaque para os números */
+#resumo-container p span {
+    color: #d9534f;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: rgba(217, 83, 79, 0.1);
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+
+/* Botão de Exportação */
+#export-btn {
+    background: linear-gradient(135deg, #28a745, #218838);
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    margin-bottom: 20px;
+}
+
+#export-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #218838, #1e7e34);
+    color: #ffffff;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #d9534f, #c9302c);
+    color: #ffffff;
+    font-size: 0.9rem;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Card de informações nas tabelas */
+.table-responsive {
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.table th {
+    background-color: #f8d7da;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 12px;
+}
+
+.table td {
+    text-align: center;
+    padding: 10px;
+    color: #1f4249;
+}
+
+/* Adicionando hover nas tabelas */
+.table tbody tr:hover {
+    background-color: rgba(217, 83, 79, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #d9534f, #c9302c);
+    color: #ffffff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+header nav a {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #f8d7da;
+}
+
+#relatorio-container {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 97%; /* Ocupa 80% da largura */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    display: block;
+}
+
+#relatorio-container h3 {
+    color: #d9534f;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+#relatorio-container p {
+    color: #333;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+
+/* Estilo para Rota Preferida */
+.tipo-rota-preferida {
+    color: green !important; /* Texto verde */
+    font-weight: bold;
+}
+
+/* Estilo para Rota Aleatória */
+.tipo-rota-aleatoria {
+    color: red !important; /* Texto vermelho */
+    font-weight: bold;
+}
+
+
+
+
+/* Adiciona transição para o hover */
+.rota-preferida:hover, .rota-aleatoria:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s ease;
+}
+
+
